@@ -26,12 +26,11 @@ section{
     font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1600 - 320)));
     margin-top: 25px;
     text-align: left;
-    border-style: solid;
-    border-color: black;
 }
 
-img{
-    border-style: hidden !important;
+.solid{
+    border-style: solid;
+    border-color: black;
 }
 
 .text-center{
