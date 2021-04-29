@@ -30,6 +30,10 @@ section{
     border-color: black;
 }
 
+img{
+    border-style: hidden !important;
+}
+
 .text-center{
     text-align: center;
 }
