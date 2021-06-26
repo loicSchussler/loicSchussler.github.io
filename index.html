@@ -1,72 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css\style-1.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Loïc Schussler | Portfolio</title>
+	<meta name="description" content="Jeune étudiant en informatique passionné par le développement.">
+	
+    <link href="assets/css/resets.css" rel="stylesheet">
+    <link href="assets/css/menus.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+
+    <!-- Link to Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Roboto&family=Zen+Dots&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6993445b4e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 
-    <title>Index</title>
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
 </head>
+
+
 <body>
-    <nav>
-        <a href="index.html"><div class="navghost"><i class="fas fa-home"> Home</i></div></a>
-        <a href="page-2.html"><div class="navdisp"><i class="fas fa-eye"> Project 1</i></div></a>
-        <a href="page-3.html"><div class="navdisp"><i class="fas fa-flag-checkered"> Project 2</i></div></a>
-        <a href="page-4.html"><div  class="navdisp"><i class="fas fa-briefcase"> Project 3</i></div></a>
-    </nav>
 
-    <main>
-        <article>
-            <h1>Portfolio</h1>
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-dark menu-sticky">
+        <!-- first child item -->
+        
+        <!-- second child item -->
+        <ul>
+            <li><a href="index.html#aboutme">A propos de moi</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="index.html#skills">Compétences</a></li>
+            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
 
 
-            <section id="presentation" class="solid"> 
-                <h3 class="partTitle">Who I am</h3>
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+            <!-- first child -->
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
 
-                <div class="hero-text-container partText">
-                    <p>My name is Loïc Schussler I am 19 years old and I'm in second year of IT engineering at EPITA,France.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem veritatis, sapiente quasi libero necessitatibus aspernatur illo, quisquam repudiandae eius alias sunt repellendus, a explicabo soluta at aliquid praesentium natus!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem molestiae, repellendus aliquid doloribus doloremque temporibus, beatae sed sit vero porro numquam error, explicabo iure iusto est. Optio alias eligendi assumenda.</p>
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+        <ul>
+            <li><a href="index.html#aboutme">A propos de moi</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="index.html#skills">Compétences</a></li>
+            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
 
+        <hr>
+        <h4>A propos de moi</h4>
+        <div class="fly-out-profile-box">
+            <img src="assets/img/profile-pic.jpg" alt="Mary Smith, web designer">
+            <p>Bonjour moi c'est Loïc, je propose mes compétences en développement web et logiciel.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Mon profil vous intéresse contactez moi !</p>
+
+        <h5><a href="mailto:schussler.loic@gmail.com" target="_blank">schussler.loic@gmail.com</a></h5>
+
+        <h4>Réseaux sociaux</h4>
+        <div class="fly-out-social-icons">
+            <a href="#" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+     <!-- Begin hero block -->
+    <div class="hero-block-two-columns unhide-content-under-sticky-menu">
+        <div class="item-2 fade-in">
+            <h1>Bienvenue</h1>
+            <h2>Je m'appelle <b>Loïc Schussler</b>, je propose mes compétences en développement web et logiciel.</h2>
+            <div class="container-btn">
+                <a href="portfolio/index.html" class="btn btn-ghost btn-rounded"><i class="fas fa-arrow-right"></i> Portfolio</a>
+                <a href="contact/index.html" class="btn btn-gradient btn-rounded"><i class="fas fa-arrow-right"></i>Contact</a>
+            </div>
+        </div>
+        <div class="item-2 fade-in">
+            <img src="assets/img/home-pic.png" alt="hero image">
+        </div>
+    </div>
+    <!-- End hero block -->
+
+
+	<div id="aboutme" class="container-flexbox bg-light-slate">
+        <div class="item-1">
+            <h2>A propos de moi</h2>
+            <p>J'ai 19 ans, je suis haut savoyard et je fais mes études en informatique à Paris.</p>
+        </div>    
+    </div>
+
+
+	<div class="container-flexbox bg-light-slate">
+		<div class="item-3">
+            <h3>Mon parcours scolaire</h3>
+            <div>
+                <div class="year">
+                    <h5>Juin 2019</h5>
+                    <p>
+                        Diplomé du baccalauréat scientifique option informatique et sciences du numérique au lycée de la versoie à Thonon-les-bains - mention bien.</p>
                 </div>
-            </section>
 
-            <section id="projects" class="text-center">
-                <h3 class="partTitle">My projects</h3>
+                <a style="text-decoration:none" href="../personal-2/portfolio/fullSpeed.html"><div class="year">
+                    <h5>Septembre 2019-Mai 2020</h5>
+                    <p>
+                        1ère année de classe préparatoire au cycle d'ingénieur en informatique de EPITA (Villejuif).&nbsp;<i class="fas fa-arrow-right"></i>
+                    </p>
+                </div></a>
 
-                <div id="carousel">
-                    <img src="">
+
+                <a style="text-decoration:none" href="../personal-2/portfolio/ocr.html"><div class="year">
+                    <h5>Septembre 2020-Janvier 2021</h5>
+                    <p>
+                        3ème semestre de classe préparatoire au cycle d'ingénieur en informatique à EPITA (Villejuif).&nbsp;<i class="fas fa-arrow-right"></i>
+                    </p>
+                </div></a>
+
+                <a style="text-decoration:none" href="../personal-2/portfolio/index.html#Irlande"><div class="year">
+                    <h5>Février 2021-Juin 2021</h5>
+                    <p>
+                        4ème semestre de classe préparatoire au cycle d'ingénieur en informatique réalisé dans une université partenaire Dorset College située à Dublin en Irlande.&nbsp;<i class="fas fa-arrow-right"></i>
+                    </p>
+                </div></a>
+            </div>
+		</div>
+
+        <div class="item-3"> 
+			<h3>Ce que je recherche</h3>      
+            <p>
+                Dans le cadre de ma scolarité à EPITA il m'est nécessaire de réaliser un stage en entreprise d'une durée de 1 mois afin de pouvoir accéder
+                au cycle ingénieur. J'aimerais réaliser ce stage dans un domaine informatique car ce serait là le moyen pour moi de développer de nouvelles compétences et
+                améliorer la manière dont je travaille. Pour vous cher recruteur une collaboration serait gage de bonne humeur, de sérieux et je l'espère d'une grande aide dans 
+                le développement de votre entreprise.
+            </p>  
+		</div>
+
+        <div class="item-3">
+            <h3>Mes loisirs</h3>
+            <p>Amoureux des grands espaces à pied et à ski</p>
+            <p>J'aime lire et m'intérésser de près à l'actualité</p>
+        </div>
+	</div><!-- End parent flexbox container -->
+
+    
+    <div id="skills" class="middle container-flexbox bg-light-slate">
+        <div class="item-1">
+            <h2 alignSkills>Mes compétences</h2>
+        </div>    
+    </div>
+
+    <div class="middle container-flexbox bg-light-slate">
+        <div class="item-3">
+            <h3 class="center">Informatique</h3>
+
+            <div class="it-skills">
+                <div class="it-column">
+                    <div><h4>Langages</h4></div>
+                    <div><p>C#</p></div>
+                    <div><p>Python</p></div>
+                    <div><p>C</p></div>
+                    <div><p>Ocaml</p></div>
+                    <div><p>HTML/CSS/JS</p></div>
+                </div>
+                
+                <div class="it-column littleSpace">
+                    <h4>Bibliothèques</h4>
+                    <p>AspNetCore,Unity</p>
+                    <p>Tkinter,PIL</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>Bootstrap</p>
                 </div>
 
-                <button class="carbutton" id="buttonLCarousel"><i class="fas fa-arrow-left"></i></button>
-                <button class="carbutton" id="buttonRCarousel"><i class="fas fa-arrow-right"></i></button>
-            </section>  
+                <div class="it-column littleSpace">
+                    <h4>Niveau</h4>
+                    <div class="it-stars"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i></div>
+                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="far fa-star yellow"></i></div>
+                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i></div>
+                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"><i class="far fa-star yellow"></i></i><i class="far fa-star yellow"></i></div>
+                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <section id="ressources" class="solid">
-                <h3 class="partTitle">Ressources</h3>
-                <ul>
-                    <li><a href="">Curriculum Vitae</a></li>
-                </ul>
-            </section>
+    <div class="middle container-flexbox bg-light-slate">
+        <div class="center item-3">
+            <h3>Langues vivantes</h3>
+            <p>Anglais courant - C1</p>
+            <p>Espagnol scolaire - B1</p>
+        </div>
+    </div>
 
-            <section id="contact" class="solid">
-                <h3 class="partTitle">Contact</h3>
-                <ul>
-                    <li><b>mail : </b>schussler.loic@gmail.com</li>
-                    <li><b>phone number : </b>(+33)0674600120</li>
-                </ul>
-            </section>
+    <div class="middle container-flexbox bg-light-slate">
+        <div class="item-3">
+            <h3 class="center">Autres</h3>
+            <ul>
+                <li>Je considère que je suis capable d'apprendre très vite</li>
+                <li>Bon communicant, je sais travailler en équipe</li>
+            </ul>
+            <br><br><br>
+            <div class="container-btn">
+                <a href="portfolio/index.html" class="btn btn-ghost btn-rounded"><i class="fas fa-arrow-right"></i> Portfolio</a>
+                <a href="contact/index.html" class="btn btn-gradient btn-rounded"><i class="fas fa-arrow-right"></i>Contact</a>
+            </div>
+            
+        </div>
+    </div>
+    
+	<footer>
 
-        </article>
-    </main>
+        <h4>Loïc Schussler, étudiant en informatique</h4>
+        <h5>"Fluctuat nec mergitur"</h5>
 
+        <ul class="footer-links">
+            <li><a href="index.html#aboutme">A propos de moi</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="index.html#skills">Compétences</a></li>
+            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>schussler.loic@gmail.com</li>
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
 
+            <li>
+                <a href="https://github.com/loicSchussler" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+         </ul>                
+        
+        </footer>
 
-
-    <script src="js\carousel.js"></script>
+    <script src="assets/js/menus.js"></script>    
+        
+	
 </body>
 </html>

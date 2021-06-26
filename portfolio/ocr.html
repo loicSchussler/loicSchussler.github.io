@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Loïc Schussler | Portfolio</title>
+	<meta name="description" content="I use HTML and CSS with graphic design and animation to bring your ideas to life.">
+	
+    <link href="../assets/css/resets.css" rel="stylesheet">
+    <link href="../assets/css/menus.css" rel="stylesheet">  
+    <link href="../assets/css/header.css" rel="stylesheet">
+	<link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/footer.css" rel="stylesheet">
+    <link href="../assets/css/projects.css" rel="stylesheet">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-dark menu-sticky">
+        
+        <!-- first child item -->
+        <ul>
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+        <ul>
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../assets/img/profile-pic.jpg" alt="Loïc Schussler, developpeur">
+            <p>Bonjour moi c'est Loïc, je propose mes compétences en développement web et logiciel.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Mon profil vous intéresse contactez moi !</p>
+
+        <h5><a href="mailto:schussler.loic@gmail.com" target="_blank">schussler.loic@gmail.com</a></h5>
+
+        <h4>Réseaux sociaux</h4>
+        <div class="fly-out-social-icons">
+            <a href="#" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+     <!-- Begin hero block -->
+
+     <div class="align1 hero-block-two-columns unhide-content-under-sticky-menu">
+        <div class="item-2">
+            <h3>Logiciel de reconnaissance optique de caractères (OCR) </h3>
+            <a href="../assets/img/ocr-rapport.pdf"><h4><i class="far fa-file-pdf"></i>Rapport de projet</h4></a>
+            <h5>Etat : fini <i class="far fa-check-circle" style="color:lightgreen;"></i></h5>
+            <h5>Contexte : scolaire (EPITA, Villejuif)</h5>
+            <h5>Projet réalisé en groupe de 4.</h5>
+            <p>Logiciel programmé en C utilisant un réseau de neurones permettant la reconaissance des caractères dans un texte écrit ou manuscrit pris en photo.</p>
+            <img src="../assets/img/ocr.jpeg" alt="Projet : OCR">  
+
+            <h3 class="paddTop1">Outils informatiques utilisés</h3>
+            <ul>
+                <li>Langage C verison C99.</li>
+                <li>Compilateur gcc.</li>
+
+                <li>VIM en tant qu'environnement de développement.</li>
+                <li>Git pour collaborer et mettre à jour le code du projet.</li>
+                <li>Discord pour communiquer au sein de l'équipe.</li>
+                <li>Trello pour se répartir les tâches.</li>
+            </ul>
+        </div>    
+    </div>
+
+    
+     <div class="project-description container-flexbox bg-light-slate">
+        <div class="item-2">
+
+            <h3>Cahier des charges du projet</h3>
+
+            <h4>Objectif global, le logiciel doit :</h4>
+            <ul class="paddTop1">
+                <li>Prendre en entrée une image en entrée dans un format standard et produira un texte reconnu.</li>
+                <li>Disposer d'une interface graphique permettant de charger l'image, de la visualiser et sauver le texte produit.</li>
+                <li>Disposer d'une section apprentissage permettant d'entrainer un réseau de neurones et de sauver et/ou recharger le résultat de cet apprentissage.</li>
+            </ul>
+
+            <h4 class="paddTop1">Description détaillée du flux de traitement du logiciel : </h4>
+            <ol class="paddTop1">
+                <li>chargement de l’image</li>
+                <li>suppression des couleurs (niveau de gris, puis noir et blanc)</li>
+                <li>pré-traitement</li>
+                <li>détection des blocs de textes</li>
+                <li>détection des caractères</li>
+                <li>reconnaissance des caractères détectés</li>
+                <li>reconstruction du texte</li>
+
+            </ol>
+
+            <h4 class="paddTop1">Contraintes techniques du projet</h4>
+            <ul class="paddTop1">
+                <li>Langage C version C99.</li>
+                <li>Utilisation de <b>gcc</b> pour compiler.</li>
+                <li>Le code doit compiler, sans warning avec les options : <i>-Wall</i> <i>-Wextra</i> <i>-std=c99</i></li>
+                <li>Le projet est livré avec un fichier <i>Makefile</i>.</li>
+                <li>Tous les identifiants utilisés dans le code ainsi que les commentaires sont en anglais.</li>
+                <li>Dans le code les lignes ne doivent pas dépasser 80 colonnes et contenir d'espaces inutiles en fin de ligne.</li>
+            </ul>
+        </div>
+
+        <div class="item-2">
+            <h3>Mon travail</h3>
+            <h4 class="paddTop1">Résumé</h4>
+            <p class="paddTop1">Dans ce projet j'ai eu un role très important dans la réalisation du code C permettant la préparation (en enlevant le "bruit") et la segmentation de l'image d'entrée qui contient du texte afin de la préparer 
+                à la reconaissance par le réseau de neurones. J'ai eu aussi un role dans la réalisation du réseau de neurones permettant la reconaissance des caractères et son implémentation en C.</p> 
+                
+            <h4 class="paddTop1">Débruitage de l'image d'entrée</h4>
+            <p class="paddTop1">J'ai réalisé le code permettant de débruiter l'image à l'aide d'une technique de <b>convolution</b> cela consiste pour chaque pixel de l'image à déterminer sa valeur "débruitée" en utilisant la valeur des pixels avoisinants. Je ne connaissais pas ce principe avant ce projet et il s'agit d'une technique assez fondamentale en analyse d'image.</p>
+
+            <h4 class="paddTop1">Processus de segmentation des caractères contenus dans l'image.</h4>
+            <p>Le code réalisé dans cette partie a pour objectif de "découper" les caractères présent dans l'image. Cela se passe en 3 étapes, il faut d'abord isoler les lignes de textes en appliquant un premier marqueur sur les pixels entourant les lignes. Dans un second temps il faut répéter le processus pour isoler les caractères cette fois-ci en appliquant un nouveau marqueur sur leur bordure. La dernière étape la plus compliquée techniquement est de stocker les caractères dans des bitmaps (image composée uniquement de pixel unicolor 0 ou 1) afin de pouvoir ensuite les envoyés dans le réseau de neurones pour reconaissance.</p>
+
+            <h4 class="paddTop1">
+                Réalisation du réseau de neurones
+            </h4>
+            <p class="paddTop1">La compréhension de ce que est un réseau de neurones a été une tâche très difficile tellement mes connaissances de base sur le fonctionnement étaient limitées. Il faut savoir aussi que au commencement du projet je ne connaissais pas du tout le langage C. Mais à force de travail et de recherches j'ai pu réaliser ce qui a servit de modèle à un de mes collabarateurs pour implémenter un réseau de neurones permettant la reconaissance de caractère en C. Ce modèle est implémentable dans tous les langages puisqu'il s'agit d'une définition dite "abstraite" d'un réseau de neurones.</p>
+        </div>
+
+        <div class="item-2">
+            <h3>Image de l'interface du logiciel</h3>
+            <img src="../assets/img/ocr-rendu.PNG"/>
+            <a href="../portfolio/index.html" class="button button-solid btn-rounded">Retour au portfolio &nbsp;<i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        
+    </div>
+    <!-- End hero block -->
+
+   
+	<footer>
+
+        <h4>Loïc Schussler, étudiant en informatique</h4>
+        <h5>"Fluctuat nec mergitur"</h5>
+
+        <ul class="footer-links">
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+
+    </footer>
+
+    <script src="../assets/js/menus.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Loïc Schussler | Portfolio</title>
+	<meta name="description" content="I use HTML and CSS with graphic design and animation to bring your ideas to life.">
+	
+    <link href="../assets/css/resets.css" rel="stylesheet">
+    <link href="../assets/css/menus.css" rel="stylesheet">  
+    <link href="../assets/css/header.css" rel="stylesheet">
+	<link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/footer.css" rel="stylesheet">
+    <link href="../assets/css/projects.css" rel="stylesheet">
+
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-dark menu-sticky">
+        
+        <!-- first child item -->
+        <ul>
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-dark menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-dark">
+        <ul>
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../assets/img/profile-pic.jpg" alt="Loïc Schussler, developpeur">
+            <p>Bonjour moi c'est Loïc, je propose mes compétences en développement web et logiciel.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Mon profil vous intéresse contactez moi !</p>
+
+        <h5><a href="mailto:schussler.loic@gmail.com" target="_blank">schussler.loic@gmail.com</a></h5>
+
+        <h4>Réseaux sociaux</h4>
+        <div class="fly-out-social-icons">
+            <a href="#" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+     <!-- Begin hero block -->
+
+     <div class="align1 hero-block-two-columns unhide-content-under-sticky-menu">
+        <div class="item-2">
+            <h3>Moodle like</h3>
+            <h5>Etat : fini <i class="far fa-check-circle" style="color:lightgreen;"></i></h5>
+            <h5>Contexte : scolaire (Dorset College, Dublin)</h5>
+            <h5>Projet réalisé en groupe de 4.</h5>
+            <a href="https://github.com/Ezotose-1/OOP-VGCProject">Github</a>
+            <p>Plateforme internet programmé en C# copiant le principe de moodle : permettre la gestion des notes,devoirs,frais de scolarités des élèves ainsi que l'organisation d'une université.</p>
+            <img src="../assets/img/moodle-illustration.png" alt="Projet : MoodleLike">  
+            <h3 class="paddTop1">Outils informatiques utilisés</h3>
+            <ul>
+                <li>Langage C# avec le framework ASP.Net Core MVC</li>
+                <li>Visual Studio 2019 en tant qu'environnement de développement.</li>
+                <li>MySQL Workbench pour gérer la base de données.</li>
+                <li>Git pour collaborer et mettre à jour le code du projet.</li>
+                <li>Discord pour communiquer au sein de l'équipe.</li>
+                <li>Trello pour se répartir les tâches.</li>
+            </ul>
+        </div>    
+    </div>
+
+     <div class="project-description container-flexbox">
+        <div class="item-2 project-presentation">
+            <h3>Cahier des charges du projet</h3>
+            <h4>Objectif global</h4>
+            <p>La plateforme doit être composée de 3 branches (étudiants,professeurs et membres de l'administration) et doit permettre d'inscrire et gérer les cours, les étudiants, les professeurs et les membres de l'administration</p>
+            <h4>Fonctionnalités requises</h4>
+            <ol>
+                <li>Une session membre de l'administration (Admin) disposant de super privilèges pour créer des cours, des emplois du temps...</li>
+                <li>Une session professeurs avec des privilèges permettant de gérer leurs élèves.</li>
+                <li>Gestion des inscriptions à l'université et aux cursus des élèves.</li>
+            </ol>
+        </div>
+
+
+        <div class="item-2 project-presentation">
+            <h3>Mon travail</h3>
+            <h4 class="paddTop1">Résumé</h4>
+            <p>Dans ce court projet mon rôle a été de réaliser la fonctionnalité d'emploi du temps pour les professeurs et étudiants. L'emploi du temps que j'ai codé se présente sous la forme d'un calendrier où dans chaque date s'affiche les cours de la journée et où il est possible en cliquant d'avoir une vue plus précise sur la journée.</p>
+            <h4 class="paddTop1">Utilisation d'une base de données relationnelle</h4>
+            <p>Avant ce projet je ne savais pas du tout comment utiliser une base de donnée dans un projet. Il s'est avéré que l'implémentation de cette fonctionnalité necessitait une grande compréhension des bases de données puisque il a fallut être capable d'afficher dans le calendrier uniquement les cours de la personne connecté. Pour cela il faut vérifier par exemple le rôle de l'utilisateur, ainsi que les groupes de travail dans lequel il est inscrit et enfin les cours reliés à ces groupes de travail.</p>
+            <h4 class="paddTop1">Apprentissage de javascript et de cshtml</h4>
+            <p>Ce projet m'a aussi permis d'obtenir un bon niveau en javascript car le calendrier a demandé beaucoup de travail afin d'avoir un résultat interactif et fonctionnel. Le cshtml a aussi été une découverte, il s'agit du langage html auquel on peut venir greffer des éléments de langage c# comme des variables ou des boucles.</p>
+        </div>
+
+
+        <div class="item-2 project-presentation">
+            <h3>Image de l'accueil de la plateforme.</h3>
+            <img src="../assets/img/moodleLike_rendu1.PNG" alt="moodle">
+        </div>
+    </div>
+    <!-- End hero block -->
+   
+	<footer>
+
+        <h4>Loïc Schussler, étudiant en informatique</h4>
+        <h5>"Fluctuat nec mergitur"</h5>
+
+        <ul class="footer-links">
+            <li><a href="../index.html#aboutme">A propos de moi</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+
+    </footer>
+
+    <script src="../assets/js/menus.js"></script> 
+
+</body>
+</html>
