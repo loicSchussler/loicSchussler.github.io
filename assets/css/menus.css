@@ -330,11 +330,3 @@ a[href^=tel] { text-decoration: none; color: #fff }
 .menu-dark ul li :is(.btn-cta:focus, .btn-cta:hover, .btn-cta:active)  {
     background-image: linear-gradient(90deg,#e052a0,#f15c41); color: #fff;
 } 
-
-#scrollUp
-{
-    position: fixed;
-    bottom : 10px;
-    right: -100px;
-    opacity: 0.5;
-}
