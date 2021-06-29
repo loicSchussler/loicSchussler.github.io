@@ -21,11 +21,32 @@
     <!-- Font Awesome 5 icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
+    <!-- Script for "go to the top" button-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+        jQuery(function(){
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200 ) { 
+                        $('#scrollUp').css('right','10px');
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' );
+                    }
+
+                });
+            });
+        });
+    </script>
+    
+
 </head>
 
 
 <body>
 
+    <div id="scrollUp">
+        <a href="#top" class="button button-solid btn-rounded"><i class="fas fa-arrow-up"></i></a>
+    </div>
     <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-dark menu-sticky">
         <!-- first child item -->
@@ -35,13 +56,12 @@
             <li><a href="index.html#aboutme">A propos de moi</a></li>
             <li><a href="portfolio/index.html">Portfolio</a></li>
             <li><a href="index.html#skills">Compétences</a></li>
-            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="assets/img/CV-25062021.pdf">CV</a></li>
             <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
     </div>
     <!-- End desktop menu -->
-
-
+            
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-dark menu-sticky">
             <!-- first child -->
@@ -60,7 +80,7 @@
             <li><a href="index.html#aboutme">A propos de moi</a></li>
             <li><a href="portfolio/index.html">Portfolio</a></li>
             <li><a href="index.html#skills">Compétences</a></li>
-            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="assets/img/CV-25062021.pdf">CV</a></li>
             <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
 
@@ -112,40 +132,8 @@
     </div>
 
 
+
 	<div class="container-flexbox bg-light-slate">
-		<div class="item-3">
-            <h3>Mon parcours scolaire</h3>
-            <div>
-                <div class="year">
-                    <h5>Juin 2019</h5>
-                    <p>
-                        Diplomé du baccalauréat scientifique option informatique et sciences du numérique au lycée de la versoie à Thonon-les-bains - mention bien.</p>
-                </div>
-
-                <a style="text-decoration:none" href="../personal-2/portfolio/fullSpeed.html"><div class="year">
-                    <h5>Septembre 2019-Mai 2020</h5>
-                    <p>
-                        1ère année de classe préparatoire au cycle d'ingénieur en informatique de EPITA (Villejuif).&nbsp;<i class="fas fa-arrow-right"></i>
-                    </p>
-                </div></a>
-
-
-                <a style="text-decoration:none" href="../personal-2/portfolio/ocr.html"><div class="year">
-                    <h5>Septembre 2020-Janvier 2021</h5>
-                    <p>
-                        3ème semestre de classe préparatoire au cycle d'ingénieur en informatique à EPITA (Villejuif).&nbsp;<i class="fas fa-arrow-right"></i>
-                    </p>
-                </div></a>
-
-                <a style="text-decoration:none" href="../personal-2/portfolio/index.html#Irlande"><div class="year">
-                    <h5>Février 2021-Juin 2021</h5>
-                    <p>
-                        4ème semestre de classe préparatoire au cycle d'ingénieur en informatique réalisé dans une université partenaire Dorset College située à Dublin en Irlande.&nbsp;<i class="fas fa-arrow-right"></i>
-                    </p>
-                </div></a>
-            </div>
-		</div>
-
         <div class="item-3"> 
 			<h3>Ce que je recherche</h3>      
             <p>
@@ -156,11 +144,38 @@
             </p>  
 		</div>
 
-        <div class="item-3">
-            <h3>Mes loisirs</h3>
-            <p>Amoureux des grands espaces à pied et à ski</p>
-            <p>J'aime lire et m'intérésser de près à l'actualité</p>
-        </div>
+		<div class="item-3">
+            <h3>Formation</h3>
+            <div>
+                <div class="year">
+                    <h5>Juin 2019</h5>
+                    <p>
+                        Diplomé du baccalauréat scientifique option informatique et sciences du numérique au lycée de la versoie à Thonon-les-bains - mention bien.</p>
+                </div>
+
+                <a style="text-decoration:none" href="../portfolio/fullSpeed.html"><div class="yellow year">
+                    <h5>Sept 2019-Mai 2020</h5>
+                    <p>
+                        1ère année de classe préparatoire au cycle d'ingénieur en informatique de EPITA (Villejuif).&nbsp;<a href="portfolio/index.html#fullSpeed"><i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div></a>
+
+
+                <a style="text-decoration:none" href="../portfolio/ocr.html"><div class="year">
+                    <h5>Sept 2020-Janv 2021</h5>
+                    <p>
+                        3ème semestre de classe préparatoire au cycle d'ingénieur en informatique à EPITA (Villejuif).&nbsp;<a href="portfolio/index.html#ocr"><i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div></a>
+
+                <a style="text-decoration:none" href="../portfolio/index.html#Irlande"><div class="year">
+                    <h5>Févr 2021-Juin 2021</h5>
+                    <p>
+                        4ème semestre de classe préparatoire au cycle d'ingénieur en informatique réalisé dans une université partenaire Dorset College située à Dublin en Irlande.&nbsp;<a href="portfolio/index.html#moodle"><i class="fas fa-arrow-right"></i></a>
+                    </p>
+                </div></a>
+            </div>
+		</div>
 	</div><!-- End parent flexbox container -->
 
     
@@ -170,58 +185,108 @@
         </div>    
     </div>
 
-    <div class="middle container-flexbox bg-light-slate">
-        <div class="item-3">
-            <h3 class="center">Informatique</h3>
+    <h3 class="center personalisedTitle bg-light-slate">Informatique</h3>
+    <div class="tableau bg-light-slate">
+        <div class="row">
+            <div class="cell">
+                <h4>Langages</h4>
+            </div>
 
-            <div class="it-skills">
-                <div class="it-column">
-                    <div><h4>Langages</h4></div>
-                    <div><p>C#</p></div>
-                    <div><p>Python</p></div>
-                    <div><p>C</p></div>
-                    <div><p>Ocaml</p></div>
-                    <div><p>HTML/CSS/JS</p></div>
-                </div>
-                
-                <div class="it-column littleSpace">
-                    <h4>Bibliothèques</h4>
-                    <p>AspNetCore,Unity</p>
-                    <p>Tkinter,PIL</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>Bootstrap</p>
-                </div>
+            <div class="cell">
+                <h4>Bibliothèques</h4>
+            </div>
 
-                <div class="it-column littleSpace">
-                    <h4>Niveau</h4>
-                    <div class="it-stars"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i></div>
-                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="far fa-star yellow"></i></div>
-                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i></div>
-                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"><i class="far fa-star yellow"></i></i><i class="far fa-star yellow"></i></div>
-                    <div class="it-stars bigSpaceTop"><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i></div>
-                    
-                </div>
+            <div class="cell">
+                <h4>Niveau</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p>C#</p>
+            </div>
+
+            <div class="cell">
+                <p>AspNetCore,Unity</p>
+            </div>
+
+            <div class="cell">
+                <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p>Python</p>
+            </div>
+
+            <div class="cell">
+                <p>Tkinter,PIL</p>
+            </div>
+
+            <div class="cell">
+                <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="far fa-star yellow"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p>C</p>
+            </div>
+
+            <div class="cell">
+                <p>SDL,Glade</p>
+            </div>
+
+            <div class="cell">
+                <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p>Ocaml</p>
+            </div>
+
+            <div class="cell">
+                <p>...</p>
+            </div>
+
+            <div class="cell">
+                <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"><i class="far fa-star yellow"></i></i><i class="far fa-star yellow"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p>HTML/CSS/JavaScript</p>
+            </div>
+
+            <div class="cell">
+                <p>Bootstrap</p>
+            </div>
+
+            <div class="cell">
+                <i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i class="fas fa-star-half-alt yellow"></i><i class="far fa-star yellow"></i>
             </div>
         </div>
     </div>
 
+    <div></div>
+
     <div class="middle container-flexbox bg-light-slate">
         <div class="center item-3">
             <h3>Langues vivantes</h3>
-            <p>Anglais courant - C1</p>
-            <p>Espagnol scolaire - B1</p>
+            <p><b>Anglais courant - C1</b></p>
+            <p><b>Espagnol scolaire - B1</b></p>
         </div>
     </div>
 
-    <div class="middle container-flexbox bg-light-slate">
+    <div class="middle ajustement-autres container-flexbox bg-light-slate">
         <div class="item-3">
             <h3 class="center">Autres</h3>
-            <ul>
-                <li>Je considère que je suis capable d'apprendre très vite</li>
-                <li>Bon communicant, je sais travailler en équipe</li>
-            </ul>
-            <br><br><br>
+            <p>Passionné d’informatique et de développement je suis persuadé de la place importante du digital aujourd’hui et en fait l’une de mes spécialités. Mes compétences interpersonnelles feront de moi un atout sérieux pour rejoindre vos équipes.</p>
+            <br><br>
             <div class="container-btn">
                 <a href="portfolio/index.html" class="btn btn-ghost btn-rounded"><i class="fas fa-arrow-right"></i> Portfolio</a>
                 <a href="contact/index.html" class="btn btn-gradient btn-rounded"><i class="fas fa-arrow-right"></i>Contact</a>
@@ -239,7 +304,7 @@
             <li><a href="index.html#aboutme">A propos de moi</a></li>
             <li><a href="portfolio/index.html">Portfolio</a></li>
             <li><a href="index.html#skills">Compétences</a></li>
-            <li><a href="../personal-2/assets/img/CV-25062021.pdf">CV</a></li>
+            <li><a href="assets/img/CV-25062021.pdf">CV</a></li>
             <li><a href="contact/index.html">Contact</a></li>
         </ul>
         

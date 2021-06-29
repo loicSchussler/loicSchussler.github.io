@@ -1,6 +1,6 @@
 //code to display the project detail on click
 let projectExplanations  = document.getElementsByClassName("project-explanation");
-let buttons = document.getElementsByClassName("project-button");
+let buttons = document.getElementsByClassName("");
 let projectImages = document.getElementsByClassName("projectImage");
 
 let titres = document.getElementsByClassName("titre");

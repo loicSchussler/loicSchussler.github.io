@@ -395,7 +395,7 @@ img.image-circle {
 }
 
 .yellow{
-    color: yellow;
+    color: orange;
 }
 
 
@@ -439,7 +439,79 @@ img.image-circle {
 }
 
 .year h5{
-    color: black;
+    color: yellow;
 
 }
 
+.year a{
+    color: white;
+}
+
+.tableau{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.cell{
+    width: 20%;
+    text-align: center;
+}
+
+.cell h4{
+    color: yellow;
+}
+
+.personalisedTitle{
+    color:#34cdf1;
+    font-size: x-large;
+    
+}
+
+.bg-light-slate{
+    color: bg-light-slate;
+}
+
+.projectLink{
+    color: red !important;
+}
+
+.item-2 a{
+    color: red;
+}
+
+.item-2 h4{
+    color: yellow;
+}
+
+h5{
+    color: yellow;
+}
+
+p .fa-arrow-right{
+    color: #34cdf1;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+	.personalisedTitle { font-size: x-large }
+    .row{margin-right: 14%;
+        margin-left: 14%;}
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.personalisedTitle {font-size: 125%}
+    .cell h4{font-size: 95%;}
+}
