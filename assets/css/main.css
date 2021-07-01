@@ -508,6 +508,8 @@ a{
 	.personalisedTitle { font-size: x-large }
     .row{margin-right: 14%;
         margin-left: 14%;}
+    .ajustementOrdi1{margin-left: 12%;}
+    .ajustementOrdi2{margin-right: 12%;}
 }
 
 /* Mobiles - 1 column */

@@ -335,6 +335,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 {
     position: fixed;
     bottom : 10px;
-    right: -100px;
+    right: 10px;
     opacity: 0.5;
 }
