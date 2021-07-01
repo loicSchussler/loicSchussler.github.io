@@ -330,10 +330,16 @@ img.image-circle {
 	#contact-form .flex-row { flex-direction: column; text-align: center; }
 }
 
+
+
 #contact-form label, #contact-form input, #contact-form textarea {
     font-family: 'Poppins', sans-serif;
-	color: #fff;
+	color: #000;
 	display: block;
+}
+
+label{
+    color: #fff !important;
 }
 
 #contact-form label {
@@ -517,3 +523,5 @@ a{
 	.personalisedTitle {font-size: 125%}
     .cell h4{font-size: 95%;}
 }
+
+    
