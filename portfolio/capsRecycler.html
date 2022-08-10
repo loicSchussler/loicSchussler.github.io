@@ -22,16 +22,8 @@
     <!-- Font Awesome 5 icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181894948-2">
-    </script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-181894948-2');
-    </script>
+    
+    
 </head>
 
 
@@ -105,17 +97,23 @@
         <div class="item-2">
             <div class="center">
                 <h3 class="personalisedTitle">Recycleur de capsules</h3>
-                <a href="https://github.com/loicSchussler/CapsuleRecycler"><h4 class="projectLink">Github</h4></a>
-                <h5>Etat : en cours <i class="far fa-check-circle" style="color:lightgreen;"></i></h5>
+                <a href="https://gitlab.com/loicSchussler/capsule-recycler"><h4 class="projectLink">GitLab</h4></a>
+                <h5>Etat : fini <i class="far fa-check-circle" style="color:lightgreen;"></i></h5>
                 <h5>Contexte : personnel</h5>
-                <p>Logiciel donnant une stratégie afin de reproduire une image à partir de capsules de bières.</p>
+                <p>Logiciel écologique donnant une stratégie afin de reproduire une image à partir de capsules de bières ou de bouchon de bouteilles.</p>
                 <img src="../assets/img/capsules-illustration.png" alt="Projet : Recycleur de capsules">  
             </div>
             <h3 class="paddTop1">Outils informatiques utilisés</h3>
             <ul>
-                <li>Langage python et C#.</li>
-                <li>Bibliothèque python PIL permettant l'analyse d'images.</li>
-                <li>Rider en tant qu'environnement de développement C# et visual studio pour le code python.</li>
+                <li>Langage python</li>
+                <li>Bibliothèque python CV2 et numpy permettant l'analyse d'images.</li>
+            </ul>
+            <h3 class="paddTop1">Notions abordées :</h3>
+            <ul>
+                <li>Colométrie</li>
+                <li>Analyse d'images</li>
+                <li>Reconnaissance de formes</li>
+                <li>Réduction dimensionnelle</li>
             </ul>
         </div>    
     </div>
@@ -124,12 +122,14 @@
         <div class="item-2 project-presentation">
             <h3>Cahier des charges du projet</h3>
             <h4>Objectif global</h4>
-            <p>Le projet n'est pas encore fini mais à terme l'objectif est de réaliser un logiciel permettant à l'utilisateur de reproduire une photo le plus fidèlement possible avec les capsules de bières dont il dispose.</p>
+            <p>Ce projet est un programme python qui a pour but de permettre le recyclage de capsules de bières ou de bouchons de bouteilles.
+                Pour ce faire l'utilisateur prend en photo les objets qu'ils souhaitent recycler ainsi qu'une image qu'il souhaite reproduire et le programme fournit alors
+                une stratégie pour reproduire l'image avec les capsules à disposition.
+            </p>
             <h4>Fonctionnalités requises</h4>
             <ol>
                 <li>Prendre en photo les capsules à disposition et connaître la stratégie de placement pour reproduire le plus fidèlement une photo au choix de l'utilisateur.</li>
-                <li>Respect des dimensions du support à disposition de l'utilisateur ainsi que de la quantité de capsules à sa disposition.</li>
-
+                <li>Respect de la quantité de capsules à disposition.</li>
             </ol>
         </div>
 
@@ -137,13 +137,28 @@
         <div class="item-2 project-presentation">
             <h3>Mon travail</h3>
             <h4 class="paddTop1">Résumé</h4>
-            <p>Pour l'instant le projet est en plein développement, j'ai réalisé une interface graphique avec tkinter (python) où l'utilisateur peut selectionner un dossier contenant des photos de capsules seule sur fond blanc. Le logiciel peut alors déjà analyser quel est la couleur moyenne de chaque capsule et déterminer une palette de couleurs à disposition. Je suis en plein travail sur la partie la plus complexe c'est à dire la mise en place de la stratégie à partir des contraintes de la dimension du support et des capsules à disposition, j'utilise pour cette partie C# car c'est un langage qui permet une grande puissance de calcul à l'ordinateur.</p>
-            <h4>Interface graphique</h4>
-            <p>Celle-ci est actuellement très simple mais elle est temporaire et ne durera que le temps du développement de la preuve de concept de mon logiciel. A termet elle disparaitra pour laisser place à une application mobile.</p>
+            <p>Le projet est composé de 3 parties :</p>
+            <p>1) La récupération du modèle et des photos de capsules à travers l'interface utilisateur qui est une interface dans un terminal.</p>
+            <p>2) La reconnaissance de formes dans ces images afin de repérer l'emplacement de chaque capsule et lui associé un numéro d'identification.</p>
+            <p>3) L'analyse de chaque capsule afin d'établir un histogramme des couleurs présentes.</p>
+            <p>4) La résolution d'une stratégie permettant à partir des capsules de réaliser le modèle.</p>
+            <h4>Interface utilisateur</h4>
+            <p>Celle-ci est actuellement très simple, peut-être que si je trouve le temps je la ferai évoluer vers une véritable interface.</p>
+            <h4>Reconnaissance de formes</h4>
+            <p>Une fois que l'utilisateur a rentré toutes les photos de capsules dans le dossier dédié, le logiciel analyse chaque image afin de situer exactement où sont les capsules.
+                <br>Cette étape est réalisée avec la bibliothèque cv2 et plus particulièrement la fonctionnalité de transformée de Hough.</p>
+            </p>
             <h4>Création de la palette de couleurs</h4>
-            <p>La création de la palette de couleurs est la première étape de traitement du logiciel. Pour ce processus le logiciel utilise la Bibliothèque PIL de python qui permet de réaliser du traitement d'image. Ainsi le programme python analyse chaque image de capsule à disposition et écrit dans un fichier texte l'identifiant de la capsule ainsi que sa couleur moyenne calculée.</p>
+            <p>A l'étape précédente le logiciel a établi exactement quels pixels appartiennent à quelle capsule. Dans celle-ci le logiciel construit la palette de couleurs en parcourant la liste
+                de capsules et établi pour chacune quelle est la couleur moyenne de cette dernière. Le nombre de capsules de même type est alors calculé en même temps.
+            </p>
             <h4>Création de la stratégie.</h4>
-            <p>La mise en place de la stratégie se fait dans un script C#. Dans un premier temps le script récupère les informations stockées par le script python dans un fichier (parsing) et créer une palette de couleurs utilisable. Dans un second temps il s'agit d'analyser l'image à reproduire afin de déterminer quel couleur de la palette se rapproche le plus de chaque groupe de pixels (calcul de distance colométrique). L'image est ainsi quadrillée en groupe de pixels (le nombre de groupe étant égal au nombre de capsules à disposition), chacun associé avec une couleur de la palette. La dernière étape de l'analyse que je n'ai pas encore réalise sera celle de déterminer le positionnement final des capsules en prenant en compte le nombre de chaque sorte. Pour illustrer cela, si 3 groupes de pixels se rapproche d'une couleur A mais que à disposition il n'y a que 2 capsules de couleur A, le logiciel doit prendre en compte cette contrainte et proposer une capsule de couleur B excédentaire pour la remplacer (toujours le plus fidèlement possible avec un calcul de distance colorométrique).</p>
+            <p>La création de la stratégie se fait en plusieurs étapes. Tout d'abord la taille finale de l'image en nombre de capsules est établie. Il s'agit de la racine carrée du nombre total de capsules.
+                L'image-modèle est alors redimensionnée pour correspondre à ce nombre en terme de pixels. Puis l'algorithme de stratégie est appliqué à l'image modèle.
+                Cet algorithme décide pour chaque pixel du modèle, quelle capsule de l'histogramme serait la plus fidèle à ce pixel. Pour cela on calcul une distance colométrique
+                entre la couleur de chaque capsule et la couleur du pixel, le choix se fait donc ensuite. Enfin la stratégie est crée et sauvegardé. L'utilisateur peut alors la consulter,
+                elle apparaît comme une image ou chaque pixel a été très grossi, et présente un numéro en son milieus correspondant au numéro de la capsule à poser à chaque fois.
+            </p>
         </div>
     </div>
     <!-- End hero block -->
@@ -164,7 +179,7 @@
         <ul class="footer-icons">
             <li>schussler.loic@gmail.com</li>
             <li>
-                <a href="https://github.com/loicSchussler" target="_blank">
+                <a href="https://gitlab.com/loicSchussler" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
             </li>

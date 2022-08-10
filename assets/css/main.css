@@ -44,7 +44,6 @@ p, li { color: #fff }
 
 .container-one-column ul { margin-left: 17px }
 
-
 /* ============== FAUX BUTTONS =================== */
 
 a.button:link, a.button:visited, a.button:hover, a.button:active { 
@@ -401,7 +400,7 @@ label{
 }
 
 .yellow{
-    color: orange;
+    color: #533018;
 }
 
 
@@ -445,7 +444,7 @@ label{
 }
 
 .year h5{
-    color: yellow;
+    color: #f16d34;
 
 }
 
@@ -471,7 +470,7 @@ label{
 }
 
 .cell h4{
-    color: yellow;
+    color: #f16d34;
 }
 
 .personalisedTitle{
@@ -493,11 +492,11 @@ label{
 }
 
 .item-2 h4{
-    color: yellow;
+    color: #f16d34;
 }
 
 h5{
-    color: yellow;
+    color: #f16d34;
 }
 
 p .fa-arrow-right{

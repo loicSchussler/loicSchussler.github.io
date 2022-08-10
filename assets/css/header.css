@@ -1,4 +1,3 @@
-
 /* ======= HERO BLOCK, FLEXBOX TWO COLUMNS ===== */
 .hero-block-two-columns {
     display: flex; justify-content: space-between; flex-wrap: wrap;
